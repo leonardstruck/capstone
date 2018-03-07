@@ -63,12 +63,6 @@ html {
   margin: 1rem;
 }
 
-.box h2 {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
 .box p {
   margin-bottom: 0.5rem;
 }
@@ -83,6 +77,23 @@ html {
 
 button:focus {outline:0;}
 
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
 /* Header */
 header {
@@ -155,13 +166,7 @@ header .desktop {
   align-self: center;
 }
 
-.banner h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.banner h2 {
+.banner p {
   margin-bottom: 1rem;
 }
 
@@ -199,11 +204,8 @@ header .desktop {
   width: 100%;
 }
 
-.information .left h1 {
-  font-size: 2rem;
-  font-weight: 700;
+.information .left h2 {
   margin-top: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 .information .left p {
@@ -227,10 +229,7 @@ header .desktop {
 
 /* Courses */
 
-.courses h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.courses h2 {
   text-align: center;
 }
 
@@ -252,10 +251,7 @@ header .desktop {
   width: 100%;
 }
 
-.coursegrid h2 {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+.coursegrid h3 {
   margin-left: 1rem;
   margin-top: 1rem;
 }
@@ -275,10 +271,7 @@ header .desktop {
   display: flex;
  }
 
-.thesis h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+.thesis h2 {
   text-align: center;
 }
 
@@ -286,11 +279,8 @@ header .desktop {
   width: 100%;
 }
 
-.thesis .left h2 {
-  font-weight: bold;
-  font-size: 1.1rem;
+.thesis .left h3 {
   margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .thesis .content {
