@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Unica+One');
+
+/*
+font-family: 'Unica One', cursive;
+font-family: 'Karla', sans-serif;
+*/
+
+video {
+  width: 200px;
+}
+
+/* Universal Styles */
+html {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+
+}
+
+:root {
+  --color-1: #41F8FF;
+  --color-2: #3BE8BE;
+  --color-3: #4EFFA2;
+  --color-4: #38E85D;
+  --color-5: #57FF41;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.light {
+  background-color: white;
+}
+
+.dark {
+  background-color: var(--color-2);
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0px;
+  height: 4rem;
+  background-color: white;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .mobile {
+  display: none;
+}
+
+header .desktop li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+header .desktop li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+header .desktop {
+  margin-right: 1.5rem;
+}
+
+#logo {
+  font-family: 'Unica One',cursive;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+#logo span:last-of-type {
+  color: var(--color-2);
+}
+
+/* Banner */
+.banner .container {
+  display: flex;
+}
+
+.banner {
+  margin-top: 4rem;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  align-self: flex-start;
+}
+
+.banner .container > * {
+  padding: 2rem 1.5rem;
+}
+
+.banner h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner h2 {
+  margin-bottom: 1rem;
+}
+
+.banner div {
+  align-self: center;
+}
+
+.banner button {
+  background-color: var(--color-3);
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
