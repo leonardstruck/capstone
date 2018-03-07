@@ -136,6 +136,7 @@ header .desktop {
   width: 100%;
   padding: 0.5rem 0;
   font-size: 0.9rem;
+  border: solid var(--color-4) 1px;
 }
 
 
@@ -146,4 +147,52 @@ header .desktop {
 
 .information .left img {
   width: 100%;
+}
+
+.information .left h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.information .left p {
+  margin-bottom: 1.5rem;
+}
+
+.information .left .author {
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px var(--color-2);
+}
+
+.box img {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.box h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.box p {
+  margin-bottom: 0.5rem;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.box:hover {
+  background-color: var(--color-1);
 }
