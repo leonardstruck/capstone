@@ -37,6 +37,10 @@ html {
   background-color: var(--color-2);
 }
 
+.section .container > * {
+  padding: 2rem 1.5rem;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -99,10 +103,6 @@ header .desktop {
   align-self: flex-start;
 }
 
-.banner .container > * {
-  padding: 2rem 1.5rem;
-}
-
 .banner h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -123,3 +123,5 @@ header .desktop {
   padding: 0.5rem 0;
   font-size: 0.9rem;
 }
+
+/* Information */
