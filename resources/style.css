@@ -5,10 +5,6 @@ font-family: 'Unica One', cursive;
 font-family: 'Karla', sans-serif;
 */
 
-video {
-  width: 200px;
-}
-
 /* Universal Styles */
 html {
   font-size: 16px;
@@ -23,6 +19,7 @@ html {
   --color-4: #38E85D;
   --color-5: #57FF41;
   --color-6: #33cca6;
+  --color-7: #f2f2f2;
 }
 
 .container {
@@ -31,11 +28,19 @@ html {
 }
 
 .light {
-  background-color: white;
+  background-color: var(--color-7);
 }
 
 .dark {
+  background-color: var(--color-6);
+}
+
+.dark .container {
   background-color: var(--color-2);
+}
+
+.light .container {
+  background-color: white;
 }
 
 .section .container {
@@ -52,6 +57,33 @@ html {
   padding-left: 1.5rem;
 }
 
+.box img {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.box h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.box p {
+  margin-bottom: 0.5rem;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.box:hover {
+  background-color: var(--color-1);
+}
+
+button:focus {outline:0;}
+
+
 /* Header */
 header {
   position: fixed;
@@ -59,6 +91,8 @@ header {
   height: 4rem;
   background-color: white;
   width: 100%;
+  box-shadow: 0px 1px 40px rgba(0,0,0, 0.4);
+  transition: 400ms ease;
 }
 
 header .container {
@@ -146,13 +180,14 @@ header .desktop {
 
 .banner button:hover {
   cursor: pointer;
-  transform: translateY(-2px);
-  box-shadow: 0px 8px 15px var(--color-6);
+  background-color: var(--color-4);
 
 }
 
 .banner button:active {
-  background-color: var(--color-4);
+  transform: translateY(2px);
+  box-shadow: 0px 8px 15px var(--color-6);
+
 }
 
 
@@ -189,26 +224,100 @@ header .desktop {
   border-bottom: solid 1px var(--color-2);
 }
 
-.box img {
-  width: 35%;
-  height: auto;
-  margin: 1rem;
+
+
+/* Courses */
+
+.courses h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.box h2 {
+.coursegrid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: center;
+}
+
+.coursegrid div {
+  max-width: 29%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.coursegrid img {
+  width: 100%;
+}
+
+.coursegrid h2 {
   font-weight: bold;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
-.box p {
+.coursegrid p {
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.coursegrid p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+/* Thesis Exhibit */
+
+.thesis .wrap {
+  display: flex;
+ }
+
+.thesis h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.thesis video {
+  width: 100%;
+}
+
+.thesis .left h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.box a {
-  text-decoration: none;
+.thesis .content {
+  margin-bottom: 2rem;
 }
 
-.box:hover {
-  background-color: var(--color-1);
+/* Footer */
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+footer nav {
+  width: 300px;
+  text-align: right;
+}
+
+footer nav li {
+  display: inline-block;
+}
+
+footer nav li a {
+  text-decoration: none;
 }
