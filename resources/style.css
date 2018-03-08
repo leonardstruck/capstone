@@ -28,11 +28,13 @@ html {
 }
 
 .light {
-  background-color: var(--color-7);
+/*  background-color: var(--color-7); */
+  background: linear-gradient(-90deg, var(--color-7), white, var(--color-7));
 }
 
 .dark {
-  background-color: var(--color-6);
+/*  background-color: var(--color-6); */
+  background: linear-gradient(-90deg, var(--color-2), var(--color-6), var(--color-2));
 }
 
 .dark .container {
