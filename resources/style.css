@@ -13,13 +13,13 @@ html {
 }
 
 :root {
-  --c-1-d: #083C5D;
+  --c-1-d: #9CB1BE;
   --c-2-d: #328CC1;
   --c-3-d: #D9B310;
   --c-4-d: #1D2731;
   --c-5-d: #FFFFFF;
 
-  --c-1-l: #4B7189;
+  --c-1-l: #CDD8DE;
   --c-2-l: #69ABD1;
   --c-3-l: #E3C751;
   --c-4-l: #5A6169;
@@ -31,24 +31,24 @@ html {
   margin: auto;
 }
 
-.dark {
-/*  background-color: var(--color-7); */
-  background: linear-gradient(-90deg, var(--c-1-l), var(--c-1-d), var(--c-1-l));
-}
-
 .light {
-/*  background-color: var(--color-6); */
-  background: linear-gradient(-90deg, var(--c-2-l), var(--c-2-d), var(--c-2-l));
+/*  background-color: var(--color-7); */
+  background: linear-gradient(-90deg, var(--c-5-d), var(--c-1-d),  var(--c-5-d));
 }
 
-.light .container {
-  background-color: var(--c-2-d);
+.dark {
+/*  background-color: var(--color-6); */
+  background: linear-gradient(-90deg, var(--c-5-d), var(--c-2-d), var(--c-5-d));
 }
 
 .dark .container {
-  background-color: var(--c-1-d);
-  color: var(--c-5-d);
+  background-color: var(--c-2-d);
 }
+
+.light .container {
+  background-color: var(--c-5-l);
+}
+
 
 .section .container {
   padding: 2rem 1.5rem;
@@ -69,8 +69,9 @@ html {
   align-items: center;
   margin-bottom: 1rem;
   border-bottom: solid 1px var(--color-2);
-  background-color: var(--c-5-d);
+  background-color: var(--c-1-l);
   color: black;
+  padding-right: 0.5rem;
 }
 
 .box img {
@@ -88,7 +89,7 @@ html {
 }
 
 .box:hover {
-  background-color: var(--c-2-d);
+  background-color: var(--c-2-l);
 }
 
 button:focus {outline:0;}
@@ -115,6 +116,7 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 h3 {
@@ -200,7 +202,7 @@ header .desktop {
 
 .banner button {
   background-color: var(--c-3-d);
-  width: 100%;
+  width: 80%;
   padding: 0.5rem 0;
   font-size: 0.9rem;
   border: none;
