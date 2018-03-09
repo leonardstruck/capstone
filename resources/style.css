@@ -70,7 +70,7 @@ html {
   margin-bottom: 1rem;
   border-bottom: solid 1px var(--color-2);
   background-color: var(--c-1-l);
-  padding-right: 0.5rem;
+  padding-right: 1rem;
 }
 
 .box img {
@@ -116,9 +116,16 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -232,7 +239,7 @@ header .desktop {
   width: 100%;
 }
 
-.information .left h2 {
+.information .left h3 {
   margin-top: 2rem;
 }
 
@@ -246,10 +253,6 @@ header .desktop {
 }
 
 /* Courses */
-
-.courses h2 {
-  text-align: center;
-}
 
 .coursegrid {
   display: flex;
@@ -269,7 +272,7 @@ header .desktop {
   width: 100%;
 }
 
-.coursegrid h3 {
+.coursegrid h4 {
   margin-left: 1rem;
   margin-top: 1rem;
 }
@@ -288,10 +291,6 @@ header .desktop {
 .thesis .wrap {
   display: flex;
  }
-
-.thesis h2 {
-  text-align: center;
-}
 
 .thesis video {
   width: 100%;
