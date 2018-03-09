@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Unica+One');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900|Raleway|Unica+One');
 
 /*
 font-family: 'Unica One', cursive;
@@ -8,18 +8,22 @@ font-family: 'Karla', sans-serif;
 /* Universal Styles */
 html {
   font-size: 16px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Raleway', sans-serif;
 
 }
 
 :root {
-  --color-1: #41F8FF;
-  --color-2: #3BE8BE;
-  --color-3: #4EFFA2;
-  --color-4: #38E85D;
-  --color-5: #57FF41;
-  --color-6: #33cca6;
-  --color-7: #f2f2f2;
+  --c-1-d: #083C5D;
+  --c-2-d: #328CC1;
+  --c-3-d: #D9B310;
+  --c-4-d: #1D2731;
+  --c-5-d: #FFFFFF;
+
+  --c-1-l: #4B7189;
+  --c-2-l: #69ABD1;
+  --c-3-l: #E3C751;
+  --c-4-l: #5A6169;
+  --c-5-l: #FFFFFF;
 }
 
 .container {
@@ -27,22 +31,23 @@ html {
   margin: auto;
 }
 
-.light {
-/*  background-color: var(--color-7); */
-  background: linear-gradient(-90deg, var(--color-7), white, var(--color-7));
-}
-
 .dark {
-/*  background-color: var(--color-6); */
-  background: linear-gradient(-90deg, var(--color-2), var(--color-6), var(--color-2));
+/*  background-color: var(--color-7); */
+  background: linear-gradient(-90deg, var(--c-1-l), var(--c-1-d), var(--c-1-l));
 }
 
-.dark .container {
-  background-color: var(--color-2);
+.light {
+/*  background-color: var(--color-6); */
+  background: linear-gradient(-90deg, var(--c-2-l), var(--c-2-d), var(--c-2-l));
 }
 
 .light .container {
-  background-color: white;
+  background-color: var(--c-2-d);
+}
+
+.dark .container {
+  background-color: var(--c-1-d);
+  color: var(--c-5-d);
 }
 
 .section .container {
@@ -57,6 +62,15 @@ html {
 .right {
   width: 40%;
   padding-left: 1.5rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px var(--color-2);
+  background-color: var(--c-5-d);
+  color: black;
 }
 
 .box img {
@@ -74,20 +88,32 @@ html {
 }
 
 .box:hover {
-  background-color: var(--color-1);
+  background-color: var(--c-2-d);
 }
 
 button:focus {outline:0;}
 
 h1 {
   font-size: 2rem;
-  font-weight: 700;
   margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 strong {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--c-3-l);
+  text-shadow: 0px 3px 1px rgba(0,0,0,0.2);
+}
+
+h1 u {
+  font-weight: 900;
+  text-decoration: none;
 }
 
 h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
-  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
@@ -102,10 +128,9 @@ header {
   position: fixed;
   top: 0px;
   height: 4rem;
-  background-color: white;
+  background-color: var(--c-5-l);
   width: 100%;
   box-shadow: 0px 1px 40px rgba(0,0,0, 0.4);
-  transition: 400ms ease;
 }
 
 header .container {
@@ -143,7 +168,7 @@ header .desktop {
 }
 
 #logo span:last-of-type {
-  color: var(--color-2);
+  color: var(--c-3-d);
 }
 
 /* Banner */
@@ -174,7 +199,7 @@ header .desktop {
 
 
 .banner button {
-  background-color: white;
+  background-color: var(--c-3-d);
   width: 100%;
   padding: 0.5rem 0;
   font-size: 0.9rem;
@@ -187,7 +212,7 @@ header .desktop {
 
 .banner button:hover {
   cursor: pointer;
-  background-color: var(--color-3);
+  background-color: var(--c-3-l);
 }
 
 .banner button:active {
@@ -219,16 +244,6 @@ header .desktop {
   margin-bottom: 2rem;
 }
 
-.box {
-  display: flex;
-  align-items: center;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-  border-bottom: solid 1px var(--color-2);
-}
-
-
-
 /* Courses */
 
 .courses h2 {
@@ -246,7 +261,7 @@ header .desktop {
 .coursegrid div {
   max-width: 29%;
   margin: 1rem;
-  background-color: white;
+  background-color: var(--c-5-d);
 }
 
 .coursegrid img {
