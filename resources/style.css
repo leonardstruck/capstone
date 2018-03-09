@@ -54,11 +54,6 @@ html {
   padding-right: 1.5rem;
 }
 
-.left p::first-letter{
-  font-size: 2rem;
-  font-family: 'Playfair Display', serif;
-}
-
 .right {
   width: 40%;
   padding-left: 1.5rem;
@@ -102,7 +97,7 @@ h1 {
 h1 strong {
   font-style: italic;
   font-weight: bold;
-  color: var(--c-3-l);
+  color: var(--c-3-d);
   text-shadow: 0px 3px 1px rgba(0,0,0,0.2);
 }
 
@@ -113,10 +108,16 @@ h1 u {
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
+  border-top: 2px var(--c-4-d);
+  border-bottom: 2px var(--c-4-d);
+  color: var(--c-4-d);
+  border-bottom-style: dashed;
+  border-top-style: solid;
+  padding: 0.75rem;
 }
 
 h3 {
@@ -127,8 +128,9 @@ h3 {
 
 h4 {
   font-size: 1.1rem;
-  font-weight: bold;
   margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.4rem;
 }
 
 /* Header */
@@ -215,7 +217,7 @@ header .desktop {
   border-radius: 45px;
   transition: all 0.3s ease 0s;
   box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', serif;
 }
 
 .banner button:hover {
