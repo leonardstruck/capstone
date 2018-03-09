@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900|Raleway|Unica+One');
 
-/*
-font-family: 'Unica One', cursive;
-font-family: 'Karla', sans-serif;
-*/
-
 /* Universal Styles */
-html {
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-
-}
-
 :root {
   --c-1-d: #9CB1BE;
   --c-2-d: #328CC1;
@@ -24,6 +13,12 @@ html {
   --c-3-l: #E3C751;
   --c-4-l: #5A6169;
   --c-5-l: #FFFFFF;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: var(--c-4-d);
 }
 
 .container {
@@ -59,6 +54,11 @@ html {
   padding-right: 1.5rem;
 }
 
+.left p::first-letter{
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
 .right {
   width: 40%;
   padding-left: 1.5rem;
@@ -70,7 +70,6 @@ html {
   margin-bottom: 1rem;
   border-bottom: solid 1px var(--color-2);
   background-color: var(--c-1-l);
-  color: black;
   padding-right: 0.5rem;
 }
 
@@ -209,7 +208,7 @@ header .desktop {
   border-radius: 45px;
   transition: all 0.3s ease 0s;
   box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
-
+  font-family: 'Playfair Display', serif;
 }
 
 .banner button:hover {
