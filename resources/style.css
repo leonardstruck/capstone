@@ -67,6 +67,8 @@ html {
   background-color: var(--c-1-l);
   padding-right: 1rem;
   transition: 200ms ease;
+  border-bottom-left-radius: 10px;
+
 }
 
 .box img {
@@ -117,6 +119,11 @@ h1 {
   font-family: 'Playfair Display', serif;
 }
 
+h1::first-letter {
+  font-size: 3rem;
+  font-style: italic;
+}
+
 h1 strong {
   font-style: italic;
   font-weight: bold;
@@ -134,14 +141,26 @@ h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  font-weight: 700;
-  border-bottom: 2px var(--c-4-d);
-  color: var(--c-4-d);
-  border-bottom-style: dashed;
-  border-top-style: solid;
   padding: 0.75rem;
   margin-left:-1.5rem;
   margin-right: -1.5rem;
+}
+
+h2::first-letter {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.dark h2 {
+  color: var(--c-4-d);
+  border-bottom: 1px var(--c-4-d);
+  border-bottom-style: dotted;
+}
+
+.light h2 {
+  color: var(--c-4-l);
+  border-bottom: 1px var(--c-4-l);
+  border-bottom-style: dotted;
 }
 
 h3 {
@@ -234,11 +253,11 @@ header .desktop {
 
 .banner button {
   background-color: var(--c-3-d);
-  width: 80%;
+  width: 90%;
   padding: 0.5rem 0;
   font-size: 0.9rem;
   border: none;
-  border-radius: 45px;
+  border-bottom-left-radius: 10px;
   transition: all 0.3s ease 0s;
   box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
   font-family: 'Raleway', serif;
@@ -292,6 +311,9 @@ header .desktop {
   max-width: 29%;
   margin: 1rem;
   background-color: var(--c-5-d);
+  border-bottom-left-radius: 10px;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
 }
 
 .coursegrid img {
@@ -304,8 +326,9 @@ header .desktop {
 }
 
 .coursegrid p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .coursegrid p:last-of-type {
