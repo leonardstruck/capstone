@@ -66,6 +66,7 @@ html {
   border-bottom: solid 1px var(--color-2);
   background-color: var(--c-1-l);
   padding-right: 1rem;
+  transition: 200ms ease;
 }
 
 .box img {
@@ -79,11 +80,33 @@ html {
 }
 
 .box a {
-  text-decoration: none;
+  text-decoration: underline;
+  transition: 200ms ease-out;
+  opacity: 0;
+  color: var(--c-4-l);
+  margin-left:-1rem;
+  font-size: 0.9rem;
 }
 
 .box:hover {
   background-color: var(--c-2-l);
+  margin-bottom:1.2rem;
+  margin-top:-0.2rem;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.box:hover h4 {
+  border-bottom: solid 1px var(--c-2-d);
+}
+
+.box:hover a {
+  margin-left: 0;
+  opacity: 1;
+}
+
+.box a:hover {
+  color: var(--c-5-l);
+  text-decoration: underline double;
 }
 
 button:focus {outline:0;}
@@ -112,12 +135,13 @@ h2 {
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
-  border-top: 2px var(--c-4-d);
   border-bottom: 2px var(--c-4-d);
   color: var(--c-4-d);
   border-bottom-style: dashed;
   border-top-style: solid;
   padding: 0.75rem;
+  margin-left:-1.5rem;
+  margin-right: -1.5rem;
 }
 
 h3 {
