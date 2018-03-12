@@ -348,6 +348,42 @@ header .desktop {
   margin-bottom: 2rem;
 }
 
+.information.mobile {
+  display: none;
+}
+
+.information.mobile .container > * {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.information.mobile .container p {
+  margin-bottom: 1rem;
+}
+
+.information.mobile .container {
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.information.mobile img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.information.mobile.container div:last-child {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width:680px) {
+  .information.desktop {
+    display: none;
+  }
+  .information.mobile {
+    display: inline;
+  }
+}
+
 /* Courses */
 
 .coursegrid {
