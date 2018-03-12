@@ -199,6 +199,13 @@ header .container {
 
 header .mobile {
   display: none;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+header .mobile li {
+  display: inline-block;
 }
 
 header .desktop li {
@@ -233,6 +240,20 @@ header .desktop {
   color: var(--c-3-d);
 }
 
+@media only screen and (max-width: 680px) {
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: flex !important;
+  }
+  #logo {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+}
 /* Banner */
 .banner .container {
   display: flex;
