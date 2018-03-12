@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900|Raleway|Unica+One');
-
+/* Responsive Breakpoints
+Tablet: 900px
+Mobile: 480px
+*/
 /* Universal Styles */
 :root {
   --c-1-d: #9CB1BE;
@@ -14,6 +17,7 @@
   --c-4-l: #5A6169;
   --c-5-l: #FFFFFF;
 }
+
 
 html {
   font-size: 16px;
@@ -165,6 +169,19 @@ h4 {
   margin-bottom: 0.5rem;
   font-family: 'Playfair Display', serif;
   line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 900px) {
+ .container .left {
+    width: 50%;
+  }
+ .container .right {
+    width: 50%;
+  }
+  .box {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 /* Header */
@@ -328,6 +345,16 @@ header .desktop {
 
 .coursegrid p:last-of-type {
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width:900px) {
+  .coursegrid {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .coursegrid div {
+    max-width: 40%;
+  }
 }
 
 /* Thesis Exhibit */
