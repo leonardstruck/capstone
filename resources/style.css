@@ -144,23 +144,14 @@ h2 {
   padding: 0.75rem;
   margin-left:-1.5rem;
   margin-right: -1.5rem;
-}
-
-h2::first-letter {
-  font-size: 2.3rem;
-  font-style: italic;
-}
-
-.dark h2 {
   color: var(--c-4-d);
   border-bottom: 1px var(--c-4-d);
   border-bottom-style: dotted;
 }
 
-.light h2 {
-  color: var(--c-4-l);
-  border-bottom: 1px var(--c-4-l);
-  border-bottom-style: dotted;
+h2::first-letter {
+  font-size: 2.3rem;
+  font-style: italic;
 }
 
 h3 {
@@ -204,8 +195,13 @@ header .desktop li {
 
 header .desktop li a {
   text-decoration: none;
-  color: black;
+  color: var(--c-4-d);
   font-size: 1rem;
+}
+
+header .desktop li a:hover {
+  text-decoration: underline;
+  color: var(--c-4-l);
 }
 
 header .desktop {
@@ -312,7 +308,6 @@ header .desktop {
   margin: 1rem;
   background-color: var(--c-5-d);
   border-bottom-left-radius: 10px;
-  transition: all 0.3s ease 0s;
   box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
 }
 
