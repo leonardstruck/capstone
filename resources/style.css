@@ -431,6 +431,28 @@ header .desktop {
   }
 }
 
+@media only screen and (max-width:680px) {
+.coursegrid div {
+  max-width: 100%;
+  width: 100%;
+  margin: 1rem 0rem 0.5rem 0rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.coursegrid img {
+  display: none;
+}
+
+.coursegrid p {
+  display: none;
+}
+
+.coursegrid h4 {
+  font-size: 1.5
+  rem;
+}
+
+}
 /* Thesis Exhibit */
 
 .thesis .wrap {
@@ -448,6 +470,7 @@ header .desktop {
 .thesis .content {
   margin-bottom: 2rem;
 }
+
 
 /* Footer */
 
