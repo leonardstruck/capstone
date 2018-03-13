@@ -459,8 +459,9 @@ header .desktop {
   box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
 
-.coursegrid div:last-of-type {
-  margin-bottom: 2rem;
+.coursegrid {
+  padding-bottom: 2rem;
+
 }
 
 .courses h2 {
