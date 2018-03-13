@@ -32,11 +32,13 @@ html {
 
 .light {
 /*  background-color: var(--color-7); */
+  background: -webkit-linear-gradient(right, var(--c-5-d), var(--c-1-d),  var(--c-5-d));
   background: linear-gradient(-90deg, var(--c-5-d), var(--c-1-d),  var(--c-5-d));
 }
 
 .dark {
 /*  background-color: var(--color-6); */
+  background: -webkit-linear-gradient(right, var(--c-5-d), var(--c-2-d), var(--c-5-d));
   background: linear-gradient(-90deg, var(--c-5-d), var(--c-2-d), var(--c-5-d));
 }
 
@@ -64,12 +66,17 @@ html {
 }
 
 .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1rem;
   border-bottom: solid 1px var(--color-2);
   background-color: var(--c-1-l);
   padding-right: 1rem;
+  -webkit-transition: 200ms ease;
   transition: 200ms ease;
   border-bottom-left-radius: 10px;
 
@@ -87,8 +94,10 @@ html {
 
 .box a {
   text-decoration: underline;
+  -webkit-transition: 200ms ease-out;
   transition: 200ms ease-out;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   color: var(--c-4-l);
   margin-left:-1rem;
   font-size: 0.9rem;
@@ -108,6 +117,7 @@ html {
 .box:hover a {
   margin-left: 0;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .box a:hover {
@@ -123,7 +133,7 @@ h1 {
   font-family: 'Playfair Display', serif;
 }
 
-h1::first-letter {
+h1:first-letter {
   font-size: 3rem;
   font-style: italic;
 }
@@ -153,7 +163,7 @@ h2 {
   border-bottom-style: dotted;
 }
 
-h2::first-letter {
+h2:first-letter {
   font-size: 2.3rem;
   font-style: italic;
 }
@@ -171,15 +181,6 @@ h4 {
   line-height: 1.4rem;
 }
 
-@media only screen and (max-width: 900px) {
- .container .left {
-    width: 50%;
-  }
- .container .right {
-    width: 50%;
-  }
-}
-
 /* Header */
 header {
   position: fixed;
@@ -191,17 +192,27 @@ header {
 }
 
 header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
 header .mobile {
   display: none;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 }
 
 header .mobile li {
@@ -231,31 +242,22 @@ header .desktop {
 #logo {
   font-family: 'Unica One',cursive;
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 1.5rem;
 }
 
 #logo span:last-of-type {
   color: var(--c-3-d);
 }
-
-@media only screen and (max-width: 680px) {
-  header .desktop {
-    display: none;
-  }
-  header .mobile {
-    display: flex !important;
-  }
-  #logo {
-    display: none;
-  }
-  nav {
-    width: 100%;
-  }
-}
 /* Banner */
 .banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -269,11 +271,13 @@ header .desktop {
 }
 
 .banner .left {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .banner .right {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .banner p {
@@ -288,6 +292,7 @@ header .desktop {
   font-size: 0.9rem;
   border: none;
   border-bottom-left-radius: 10px;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
   font-family: 'Raleway', serif;
@@ -299,35 +304,16 @@ header .desktop {
 }
 
 .banner button:active {
-  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-
-}
-
-@media only screen and (max-width:680px) {
-  .banner .container {
-    flex-wrap: wrap;
-    padding: 0px;
-  }
-
-  .banner div {
-    width: 100% !important;
-    padding: 0px;
-  }
-
-  .banner .right {
-    padding: 1rem 2rem;
-    text-align: center;
-  }
-
-  .banner button {
-    margin-bottom: 1rem;
-  }
 
 }
 
 /* Information */
 .information .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -362,7 +348,8 @@ header .desktop {
 }
 
 .information.mobile .container {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 1rem;
 }
 
@@ -375,23 +362,19 @@ header .desktop {
   margin-left: 1rem;
 }
 
-@media only screen and (max-width:680px) {
-  .information.desktop {
-    display: none;
-  }
-  .information.mobile {
-    display: inline;
-  }
-}
-
 /* Courses */
 
 .coursegrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: 3rem;
   margin-right: 3rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .coursegrid div {
@@ -420,60 +403,11 @@ header .desktop {
 .coursegrid p:last-of-type {
   margin-bottom: 1rem;
 }
-
-@media only screen and (max-width:900px) {
-  .coursegrid {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .coursegrid div {
-    max-width: 40%;
-  }
-}
-
-@media only screen and (max-width:680px) {
-.coursegrid div {
-  max-width: 100%;
-  width: 100%;
-  margin: 1rem 0rem 0.5rem 0rem;
-  padding: 1rem 1rem 1.5rem 1rem;
-  transition: ease 200ms;
-}
-
-.coursegrid img {
-  display: none;
-}
-
-.coursegrid p {
-  display: none;
-}
-
-.coursegrid h4 {
-  font-size: 1.5rem;
-}
-
-.coursegrid div:active {
-  background-color: var(--c-2-l);
-  margin-bottom:0.7rem;
-  margin-top:0.8rem;
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
-}
-
-.coursegrid {
-  padding-bottom: 2rem;
-
-}
-
-.courses h2 {
-  border-bottom: none;
-  margin-bottom: 1rem;
-  padding: 0px;
-}
-
-}
 /* Thesis Exhibit */
 
 .thesis .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
  }
 
@@ -489,45 +423,16 @@ header .desktop {
   margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 680px) {
-  .thesis .right {
-    display: none;
-  }
-
-  .thesis .left {
-    width: 100%;
-    padding: 0px;
-  }
-
-  .thesis video {
-    margin: 0px;
-    width: 100%;
-  }
-
-  .thesis .container {
-    padding: 0px;
-    margin-bottom: 1.5rem;
-  }
-
-  .thesis h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: none;
-  }
-  .thesis p {
-    display: none;
-  }
-  .thesis h3 {
-    display: none;
-  }
-}
-
 
 /* Footer */
 
 footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1rem;
@@ -553,11 +458,121 @@ footer nav li a:hover {
   color: var(--c-1-l);
 }
 
-@media only screen and (max-width:680px) {
-footer .container {
-  padding-bottom: 1rem;
+@media only screen and (max-width: 900px){
+  .container .left{
+    width: 50%;
+  }
+  .container .right{
+    width: 50%;
+  }
+  .coursegrid{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .coursegrid div{
+    max-width: 40%;
+  }
 }
-footer nav {
-  display: none;
-}
+
+@media only screen and (max-width:680px){
+  header .desktop{
+    display: none;
+  }
+  header .mobile{
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  #logo{
+    display: none;
+  }
+  nav{
+    width: 100%;
+  }
+  .banner .container{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+  }
+  .banner div{
+    width: 100% !important;
+    padding: 0px;
+  }
+  .banner .right{
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  .banner button{
+    margin-bottom: 1rem;
+  }
+  .information.desktop{
+    display: none;
+  }
+  .information.mobile{
+    display: inline;
+  }
+  .coursegrid div{
+    max-width: 100%;
+    width: 100%;
+    margin: 1rem 0rem 0.5rem 0rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+    -webkit-transition: ease 200ms;
+    transition: ease 200ms;
+  }
+  .coursegrid img{
+    display: none;
+  }
+  .coursegrid p{
+    display: none;
+  }
+  .coursegrid h4{
+    font-size: 1.5rem;
+  }
+  .coursegrid div:active{
+    background-color: var(--c-2-l);
+    margin-bottom: 0.7rem;
+    margin-top: 0.8rem;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+  }
+  .coursegrid{
+    padding-bottom: 2rem;
+  }
+  .courses h2{
+    border-bottom: none;
+    margin-bottom: 1rem;
+    padding: 0px;
+  }
+
+  .thesis .right{
+    display: none;
+  }
+  .thesis .left{
+    width: 100%;
+    padding: 0px;
+  }
+  .thesis video{
+    margin: 0px;
+    width: 100%;
+  }
+  .thesis .container{
+    padding: 0px;
+    margin-bottom: 1.5rem;
+  }
+  .thesis h2{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: none;
+  }
+  .thesis p{
+    display: none;
+  }
+  .thesis h3{
+    display: none;
+  }
+  footer .container{
+    padding-bottom: 1rem;
+  }
+  footer nav{
+    display: none;
+  }
 }
