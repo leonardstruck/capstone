@@ -426,10 +426,7 @@ footer .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
 }
 
 footer nav {
