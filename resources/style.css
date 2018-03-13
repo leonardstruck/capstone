@@ -437,6 +437,7 @@ header .desktop {
   width: 100%;
   margin: 1rem 0rem 0.5rem 0rem;
   padding: 1rem 1rem 1.5rem 1rem;
+  transition: ease 200ms;
 }
 
 .coursegrid img {
@@ -448,8 +449,14 @@ header .desktop {
 }
 
 .coursegrid h4 {
-  font-size: 1.5
-  rem;
+  font-size: 1.5rem;
+}
+
+.coursegrid div:active {
+  background-color: var(--c-2-l);
+  margin-bottom:0.7rem;
+  margin-top:0.8rem;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
 
 }
