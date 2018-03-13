@@ -506,6 +506,7 @@ header .desktop {
 
   .thesis .container {
     padding: 0px;
+    margin-bottom: 1.5rem;
   }
 
   .thesis h2 {
@@ -553,5 +554,10 @@ footer nav li a:hover {
 }
 
 @media only screen and (max-width:680px) {
-
+footer .container {
+  padding-bottom: 1rem;
+}
+footer nav {
+  display: none;
+}
 }
