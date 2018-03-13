@@ -86,6 +86,10 @@ html {
   margin: 1rem;
 }
 
+.box div {
+  width: 65%;
+}
+
 .box p {
   margin-bottom: 0.5rem;
 }
