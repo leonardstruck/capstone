@@ -489,6 +489,10 @@ footer nav li a:hover {
   nav{
     width: 100%;
   }
+  h2 {
+    margin-right:0px;
+    margin-left: 0px;
+  }
   .banner .container{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
