@@ -459,6 +459,16 @@ header .desktop {
   box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
 
+.coursegrid div:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.courses h2 {
+  border-bottom: none;
+  margin-bottom: 1rem;
+  padding: 0px;
+}
+
 }
 /* Thesis Exhibit */
 
@@ -476,6 +486,38 @@ header .desktop {
 
 .thesis .content {
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .thesis .right {
+    display: none;
+  }
+
+  .thesis .left {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .thesis video {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .thesis .container {
+    padding: 0px;
+  }
+
+  .thesis h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: none;
+  }
+  .thesis p {
+    display: none;
+  }
+  .thesis h3 {
+    display: none;
+  }
 }
 
 
@@ -507,4 +549,8 @@ footer nav li a {
 footer nav li a:hover {
   text-decoration: underline;
   color: var(--c-1-l);
+}
+
+@media only screen and (max-width:680px) {
+
 }
